@@ -58,4 +58,11 @@
 .italics {
   font-weight: 500;
 }
+
+.dark-mode {
+  .link {
+    color: white;
+    background-color: rgba(173, 173, 173, 0.301); /* Light background for emphasis */
+  }
+}
 </style>

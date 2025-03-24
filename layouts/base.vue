@@ -1,11 +1,12 @@
 <template>
   <main class="baseLayout">
     <nav class="baseNav">
-      <p>nuit.</p>
+      <NuxtLink class="baseNav__logo" to="/"><p>nuit.</p></NuxtLink>
       <ul class="baseNav__links">
         <li><NuxtLink class="baseNav__link" to="/">home</NuxtLink></li>
         <li><NuxtLink class="baseNav__link" to="/about">about</NuxtLink></li>
       </ul>
+      <ThemeToggle />
     </nav>
       <slot />
   </main>
@@ -17,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0; /* Light background for contrast */
   padding: 20px; /* Add some padding around the layout */
 }
 
@@ -36,6 +36,11 @@
     list-style: none;
   }
 
+  &__logo {
+    color: rgb(23, 23, 23);
+    text-decoration: none;
+  }
+
   &__link {
     font-size: 16px;
     font-weight: 400;
@@ -44,6 +49,15 @@
 
     &:hover {
       text-decoration: underline; /* Add hover effect for links */
+    }
+  }
+}
+
+.dark-mode {
+  .baseNav {
+    &__logo,
+    &__link {
+      color: white;
     }
   }
 }

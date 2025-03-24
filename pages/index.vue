@@ -47,11 +47,6 @@
   border-radius: 100%;
 }
 
-.heading1,
-.paragraph {
-  color: rgb(23, 23, 23);
-}
-
 .heading1 {
   font-size: 16px;
   font-weight: 500;
@@ -88,7 +83,6 @@
     gap: 8px;
     font-size: 16px;
     font-weight: 400;
-    color: rgb(23, 23, 23);
     text-decoration: none;
 
     &:hover {
@@ -100,6 +94,24 @@
     &Divider {
       flex-grow: 1;
       border-bottom: 1px dashed rgb(149, 149, 149);
+    }
+  }
+}
+
+.light-mode {
+  .socials__item {
+    color: rgb(23, 23, 23);
+  }
+}
+
+.dark-mode {
+  .socials__item {
+    color: white;
+
+    &:hover {
+      .socials__itemDivider {
+        border-bottom: 1px solid white;
+      }
     }
   }
 }
