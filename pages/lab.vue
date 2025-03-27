@@ -83,6 +83,16 @@ import { motion } from 'motion-v'
   }
 }
 
+.dark-mode {
+  .card {
+    border-color: rgba(255, 255, 255, 0.847);
+
+    &__heading {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
 .button {
   width: 100px;
   height: 100px;
