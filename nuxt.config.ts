@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxtjs/color-mode',
+    'motion-v/nuxt',
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
