@@ -6,6 +6,7 @@
         <li><NuxtLink class="baseNav__link" to="/">home</NuxtLink></li>
         <li><NuxtLink class="baseNav__link" to="/about">about</NuxtLink></li>
         <li><NuxtLink class="baseNav__link" to="/lab">lab</NuxtLink></li>
+        <li><NuxtLink class="baseNav__link" to="/ask">finn_bot</NuxtLink></li>
       </ul>
       <ThemeToggle />
     </nav>

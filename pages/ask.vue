@@ -17,7 +17,8 @@
     </div>
     <div class="ask__input">
       <span class="ask__inputSlash">/</span>
-      <input 
+      <input
+        ref="inputRef"
         class="ask__inputField" 
         v-model="question"
         @keyup.enter="submitQuestion"
@@ -31,6 +32,14 @@
 definePageMeta({
   layout: 'simple',
 })
+
+import { onMounted, ref } from 'vue';
+
+const inputRef = ref<HTMLInputElement | null>(null);
+
+onMounted(() => {
+  inputRef.value?.focus();
+});
 
 import { useAskResponse } from '~/composables/useAskResponse';
 import { useTypingAnimation } from '~/composables/useTypingAnimation';
