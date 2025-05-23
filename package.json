@@ -16,6 +16,7 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "motion-v": "^0.13.1",
     "nuxt": "^3.16.1",
+    "openai": "^4.103.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

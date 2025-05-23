@@ -21,7 +21,7 @@
         ref="inputRef"
         class="ask__inputField" 
         v-model="question"
-        @keyup.enter="submitQuestion"
+        @keyup.enter="handleSubmitQuestion"
         :placeholder="randomCommand"
       />
     </div>
@@ -44,12 +44,12 @@ onMounted(() => {
 import { useAskResponse } from '~/composables/useAskResponse';
 import { useTypingAnimation } from '~/composables/useTypingAnimation';
 
-const { question, response, isHtml, submitQuestion, availableCommands } = useAskResponse();
+const { question, response, isHtml, submitQuestion, availableCommands, askGPT } = useAskResponse();
 
 const responseText = computed(() => response.value.text || '');
 const responseType = computed(() => response.value.type);
 
-const { displayedText, isResponding } = useTypingAnimation(responseText, 5);
+const enableGpt = ref(false);
 
 const randomCommand = computed(() => {
   const commands = availableCommands.value;
@@ -59,9 +59,35 @@ const randomCommand = computed(() => {
 const handleCommandButtonClick = (event: Event) => {
   const target = event.target as HTMLButtonElement;
   question.value = `${target.innerText}`;
-
+  
   submitQuestion();
 };
+
+const gptResponse = ref<string>('');
+
+const handleSubmitQuestion = () => {
+  if (question.value.trim() === '') {
+    return;
+  }
+
+  if (!enableGpt.value) {
+    submitQuestion();
+
+    return;
+  }
+
+  if (availableCommands.value.includes(question.value)) {
+    submitQuestion();
+  } else {
+    askGPT(question.value).then(response => {
+      gptResponse.value = response ?? '';
+    });
+  }
+
+  question.value = '';
+};
+
+const { displayedText, isResponding } = useTypingAnimation(responseText, 5);
 </script>
 
 <style scoped lang="scss">

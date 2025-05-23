@@ -39,7 +39,15 @@ export function useAskResponse() {
     question.value = '';
   }
 
+  const askGPT = async (question: string) => {
+    const { data } = await useFetch('/api/ask', {
+      method: 'POST',
+      body: { question },
+    });
 
+    response.value.text = data.value?.answer ?? '';
+  };
+  
 
   return {
     question,
@@ -47,5 +55,6 @@ export function useAskResponse() {
     isHtml,
     submitQuestion,
     availableCommands,
+    askGPT,
   }
 }

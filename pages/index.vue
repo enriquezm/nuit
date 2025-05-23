@@ -42,12 +42,26 @@
       </li>
     </ul>
   </section>
+  <section class="socials">
+    <h2 class="heading2">Projects</h2>
+    <ul class="socials__list">
+      <li v-for="project in projects" :key="project.url">
+        <a class="socials__item" :href="project.url">
+          <span class="socials__itemHandler">{{ project.title }}</span>
+          <div class="socials__itemDivider"></div>
+          <span class="socials__itemIcon">{{ project.details }}</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script setup lang="ts">
 import { useExperiences } from '~/composables/useExperiences';
 
 const { experiences } = useExperiences();
+
+const { projects } = useProjects();
 
 definePageMeta({
   layout: 'base',

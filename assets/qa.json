@@ -1,4 +1,8 @@
 {
+  "end": {
+      "type": "close_eyes",
+      "html": "Thanks for stoping by, I'm going to take a nap now. Here's a link back to the main site: <a href='/'>Home</a>"
+  },
   "experiences": {
     "type": "text",
     "html": "<div style='display:flex;flex-direction:column;gap:16px;'><p>Here's some of Myles' experience:</p><ul style='list-style-position:inside;'><li><strong>Senior Full Stack Engineer</strong> at <em>Slickdeals</em> — May 2024-Present · 1 yr 1 mo</li><li><strong>Senior Frontend Engineer</strong> at <em>Slickdeals</em> — Apr 2023-Jun 2024 · 1 yr 3 mos</li><li><strong>Frontend Engineer II</strong> at <em>Slickdeals</em> — Mar 2022-Apr 2023 · 1 yr 2 mos</li></ul><p>Want more details? Check out Myles' <a href='https://www.linkedin.com/in/mylesenriquez/'>LinkedIn</a>.</p></div>"
