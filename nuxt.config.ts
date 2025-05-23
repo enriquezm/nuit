@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
     '@nuxt/fonts',
@@ -8,7 +7,7 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
   ],
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/scss/global.scss'],
   colorMode: {
     preference: 'system', // default theme
@@ -16,4 +15,8 @@ export default defineNuxtConfig({
     classSuffix: '-mode',
     storageKey: 'nuxt-color-mode' // Ensure the key is correctly stored
   },
+  alias: {
+    '@/components': './components',
+    '@/assets': './assets',
+  }
 })

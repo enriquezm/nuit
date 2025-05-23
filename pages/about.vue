@@ -12,6 +12,12 @@
   </section>
 </template>
 
+<script setup lang="ts">
+definePageMeta({
+  layout: 'base',
+})
+</script>
+
 <style scoped lang="scss">
 .about {
   max-width: 600px;

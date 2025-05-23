@@ -8,15 +8,23 @@
 const colorMode = useColorMode();
 
 const setColorMode = () => {
-  console.log('changing color mode');
-  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark';
+  colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark';
 };
 
-const icon = computed(() => colorMode.value === 'dark' ? 'fe:sunny-o' : 'fe:moon');
+const icon = ref(colorMode.value);;
 
-watchEffect(() => {
-  console.log('Color mode:', colorMode.value) // Debug if it changes
-})
+watch(
+  () => colorMode.value,
+  (newColorMode) => {
+    icon.value = newColorMode === 'dark' ? 'fe:sunny-o' : 'fe:moon';
+  },
+  { immediate: true }
+);
+
+onMounted(() => {
+  console.log('icon', icon.value);
+  console.log('colormode', colorMode);
+});
 </script>
 
 <style scoped lang="scss">

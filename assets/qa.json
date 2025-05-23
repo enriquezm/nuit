@@ -1,0 +1,26 @@
+{
+  "experiences": {
+    "type": "text",
+    "html": "<div style='display:flex;flex-direction:column;gap:16px;'><p>Here's some of Myles' experience:</p><ul style='list-style-position:inside;'><li><strong>Senior Full Stack Engineer</strong> at <em>Slickdeals</em> — May 2024-Present · 1 yr 1 mo</li><li><strong>Senior Frontend Engineer</strong> at <em>Slickdeals</em> — Apr 2023-Jun 2024 · 1 yr 3 mos</li><li><strong>Frontend Engineer II</strong> at <em>Slickdeals</em> — Mar 2022-Apr 2023 · 1 yr 2 mos</li></ul><p>Want more details? Check out Myles' <a href='https://www.linkedin.com/in/mylesenriquez/'>LinkedIn</a>.</p></div>"
+  },
+  "hello": {
+    "type": "text",
+    "text": "meow!"
+  },
+  "help": {
+    "type": "text",
+    "html": "<em>Not sure what to ask?</em> Try any of the commands listed on the left 👈🏽"
+  },
+  "pet": {
+    "type": "close_eyes",
+    "text": "PrrrrrRRRRRrrrrrrrrrRRrrrrRRRRrrrrrrrRRRRRRRRRRrrrrrrrrrRRRRRRRRRrrrrrrrrrrrRRRRRRRrrrrrrrrrrrRRRRRRRrrrrrrrrrrr"
+  },
+  "whoareyou": {
+    "type": "text",
+    "text": "I am finn_bot, a cat bot created by Myles to help you with your questions while he's out and about."
+  },
+  "whoismyles": {
+    "type": "text",
+    "text": "Myles is a software engineer and the creator of this bot. He loves pastries and is always looking for ways to build ui that hits different."
+  }
+}

@@ -30,7 +30,29 @@
       </li>
     </ul>
   </section>
+  <section class="socials">
+    <h2 class="heading2">Experience</h2>
+    <ul class="socials__list">
+      <li v-for="experience in experiences" :key="experience.url">
+        <a class="socials__item" :href="experience.url">
+          <span class="socials__itemHandler">{{ experience.title }} @ {{ experience.company }}</span>
+          <div class="socials__itemDivider"></div>
+          <span class="socials__itemIcon">{{ experience.duration }}</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 </template>
+
+<script setup lang="ts">
+import { useExperiences } from '~/composables/useExperiences';
+
+const { experiences } = useExperiences();
+
+definePageMeta({
+  layout: 'base',
+})
+</script>
 
 <style scoped lang="scss">
 .intro {

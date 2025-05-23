@@ -1,0 +1,27 @@
+<svg class="finn" viewBox="0 0 91 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <rect class="finn__eye" x="26" y="37" width="10" height="11" fill="inherit"/>
+  <rect class="finn__mouth" x="47" y="64" width="10" height="6" fill="inherit"/>
+  <path d="M44 48H55V54H44V48Z" fill="inherit"/>
+  <path d="M48 54H52V59H48V54Z" fill="inherit"/>
+  <path d="M39 59H60V64H39V59Z" fill="inherit"/>
+  <path d="M59 53H65V59H59V53Z" fill="inherit"/>
+  <path d="M5 5H11V37H5V5Z" fill="inherit"/>
+  <path d="M0 37H6V53H0V37Z" fill="inherit"/>
+  <path d="M6 42H16V48H6V42Z" fill="inherit"/>
+  <path d="M0 58H11V64H0V58Z" fill="inherit"/>
+  <path d="M11 64H22V70H11V64Z" fill="inherit"/>
+  <path d="M69 64H80V70H69V64Z" fill="inherit"/>
+  <path d="M6 52H16V58H6V52Z" fill="inherit"/>
+  <path d="M74 42H91V48H74V42Z" fill="inherit"/>
+  <path d="M74 53H89V59H74V53Z" fill="inherit"/>
+  <path d="M80 33H85V64H80V33Z" fill="inherit"/>
+  <path d="M11 0H21V5H11V0Z" fill="inherit"/>
+  <path d="M21 5H26V10H21V5Z" fill="inherit"/>
+  <path d="M54 11H59V16H54V11Z" fill="inherit"/>
+  <path d="M59 6H64V11H59V6Z" fill="inherit"/>
+  <path d="M75 6H80V33H75V6Z" fill="inherit"/>
+  <path d="M64 1H75V6H64V1Z" fill="inherit"/>
+  <path d="M26 10H31V21H26V10Z" fill="inherit"/>
+  <path d="M31 16H59V22H31V16Z" fill="inherit"/>
+  <rect class="finn__eye" x="59" y="37" width="10" height="11" fill="inherit"/>
+</svg>
